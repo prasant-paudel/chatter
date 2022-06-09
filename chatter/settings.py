@@ -77,6 +77,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'chatter.wsgi.application'
+ASGI_APPLICATION = 'chatter.asgi.application'
 
 
 # Database

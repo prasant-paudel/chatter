@@ -37,6 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    # Additional packages
+    'rest_framework',
+    'channels',
+    'channels_redis',
+    'rest_framework_simplejwt',
+
+    # Local apps
+    'message',
 ]
 
 MIDDLEWARE = [

@@ -79,6 +79,15 @@ TEMPLATES = [
 WSGI_APPLICATION = 'chatter.wsgi.application'
 ASGI_APPLICATION = 'chatter.asgi.application'
 
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels_redis.core.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [('0.0.0.0', 6379)],
+        },
+    },
+}
+
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
